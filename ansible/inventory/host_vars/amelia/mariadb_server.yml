@@ -1,0 +1,4 @@
+---
+mariadb_server__allow: [ '127.0.0.1' ]
+mariadb_server__backup_mailaddr: 'email@example.com'
+mariadb_server__backup_directory: '/bck/mysql'

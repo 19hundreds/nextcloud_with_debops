@@ -1,0 +1,11 @@
+---
+pki_enabled: True
+pki_realms:
+  - name: 'linda.example.com'
+    internal: False
+    authority_preference: 'acme'
+    acme: True
+    acme_default_subdomains: []
+    acme_domains: [ 'nc.example.com' ]
+    acme_ca: 'le-staging-v2' #for testing
+    #acme_ca: 'le-live-v2'      #for production

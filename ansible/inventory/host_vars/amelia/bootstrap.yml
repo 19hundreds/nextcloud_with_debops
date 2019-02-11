@@ -1,0 +1,3 @@
+---
+bootstrap__domain: 'linda.example.com'
+bootstrap__admin_groups: [ 'admins', 'staff', 'adm', 'sudo', 'www-data' ]

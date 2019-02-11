@@ -1,0 +1,11 @@
+---
+owncloud__deploy_state: 'present'
+owncloud__variant: 'nextcloud'
+owncloud__release: '15'
+owncloud__app_user: 'www-data'
+owncloud__app_home: '/var/www/nextcloud'
+owncloud__admin_username: 'admin'
+owncloud__domain: 'example.com'
+owncloud__fqdn: 'nc.{{ owncloud__domain }}'
+owncloud__mail_domain: '{{ owncloud__domain }}'
+owncloud__webserver: 'nginx'

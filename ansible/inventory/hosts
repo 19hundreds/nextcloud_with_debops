@@ -1,0 +1,31 @@
+# This is an Ansible inventory file in INI format. You can define a list of
+# hosts and groups to be managed by this particular inventory.
+
+# Hosts listed under [debops_all_hosts] will have common DebOps plays
+# ran against them. It will include services such as iptables, DNS, Postfix,
+# sshd configuration and more.
+#
+# View the list here:
+# https://github.com/debops/debops-playbooks/blob/master/playbooks/common.yml
+#
+# You should check Getting Started guide for useful suggestions:
+# https://docs.debops.org/en/latest/debops-playbooks/guides/getting-started.html
+
+# Your host is eligible to be managed by DebOps' common playbook. If you want
+# that functionality and more, then uncomment your hostname below.
+
+[debops_all_hosts]
+# common.yml runs against all these hosts
+linda ansible_ssh_host=linda.example.com ansible_user=root
+
+[debops_service_mariadb_server]
+linda
+
+[debops_service_nginx]
+linda
+
+[debops_service_owncloud_nginx]
+linda
+
+[debops_service_owncloud]
+linda
