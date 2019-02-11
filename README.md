@@ -1,18 +1,18 @@
-# Configuring Nextcloud with debops
+# Configuring Nextcloud with DebOps
 
 ## Introduction
 
-[debops](https://github.com/debops/debops) is a pretty extensive collection of [ansible](https://www.ansible.com/) playbooks with a large [documentation](https://docs.debops.org/en/master/).
+[DebOps](https://github.com/debops/debops) is a pretty extensive collection of [ansible](https://www.ansible.com/) playbooks with a large [documentation](https://docs.debops.org/en/master/).
 
 It's used to configure, deploy and maintain any Debian based virtual machine.
 
-Debops offers, out of the box, hundreds of services well configured accordingly to the best practices.
+DebOps offers, out of the box, hundreds of services well configured accordingly to the best practices.
 
-If debops doesn't have a recipe for a specific software the user has the chance to add her own recipes.
+If DebOps doesn't have a recipe for a specific software the user has the chance to add her own recipes.
 
 ## Audience
 
-This repo is meant for devops/ansible/debops beginners and it can be used as a tutorial.
+This repo is meant for devops/Ansible/DebOps beginners and it can be used as a tutorial.
 
 ## Expected result
 
@@ -35,7 +35,7 @@ This repo assumes that:
 
 If you don't want to call your server "linda" then you have to change `linda` to `whatever-you-chose` anywhere in these configuration files.
 
-## Install debops
+## Install DebOps
 
 Configure your environment so that `~/.local/bin` is in your PATH:
 
@@ -44,7 +44,7 @@ mkdir -p ${HOME}/.local/bin &> /dev/null
 PATH="${HOME}/.local/bin/:${PATH}"
 ```
 
-Check your ~/.bashrc file to be sure that PATH will retain the change after rebooting your pc.
+Check your `~/.bashrc` file to be sure that PATH will retain the change after rebooting your pc.
 
 Install these packages on your personal computer:
 
@@ -126,7 +126,9 @@ cd nextcloud_with_debops
 debops
 ```
 
-Let it run. It takes a long time, like an hour.
+Let it run. It takes a long time, like an hour (but it depends a lot on several factors). Quality comes at a price :-)
+
+DebOps takes care of an enormous amount of things that non-professional system administrator usually overlooks. Additionally, installing NextCloud involves the configuration of several services therefore the waiting time is an irrelevant cost compared to the advantages.
 
 When it's done, check if you have any error. You should have no issues otherwise google for solutions before going ahead.
 
